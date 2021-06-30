@@ -51,7 +51,7 @@ function Visual.FloatingHelpText(text, sound, loop)
     if string.len(text) > 99 then
         AddLongString(text)
     end
-    EndTextCommandDisplayHelp(0, loop or 0, sound or true, -1)
+    EndTextCommandDisplayHelp(0, loop or 0, sound or false, -1)
 end
 
 function Visual.Prompt(text, spinner)
